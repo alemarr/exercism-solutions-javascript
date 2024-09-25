@@ -1,0 +1,7 @@
+**/node_modules/*
+**/.exercism/*
+**/yarn.lock
+**/.pnp.*
+**/.yarn/*
+**/.npmrc
+.idea/*
