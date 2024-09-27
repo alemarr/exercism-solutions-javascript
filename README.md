@@ -25,6 +25,7 @@
 - [Reverse String](./reverse-string)
 - [RNA Transcription](./rna-transcription)
 - [Roman Numerals](./roman-numerals)
+- [Rotational Cipher](./rotational-cipher)
 - [Series](./series)
 - [Space Age](./space-age)
 - [Transpose](./transpose)
