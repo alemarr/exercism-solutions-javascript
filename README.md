@@ -1,6 +1,6 @@
 # Exercism Solutions - Javascript Track
 
-## Easy 🐤 (WIP)
+## Easy 🐣
 
 - [Acronym](./acronym)
 - [Anagram](./anagram)
@@ -31,3 +31,7 @@
 - [Transpose](./transpose)
 - [Triangle](./triangle)
 - [Two Fer](./two-fer)
+
+## Medium 🐥
+
+- [Markdown](./markdown)
