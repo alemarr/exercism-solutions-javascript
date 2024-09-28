@@ -1,3 +1,7 @@
+const MarkdownParserConfig = {
+  MaxHeadingSize: 6,
+};
+
 class MarkdownDocument {
   constructor(markdown) {
     this.markdown = markdown;
@@ -94,7 +98,7 @@ class MarkdownElement {
 
 class Heading extends MarkdownElement {
   toHtml() {
-    const size = this.getLine().getString().substr(0, 6).match(/#/g).length;
+    const size = this.getLine().getString().substr(0, MarkdownParserConfig.MaxHeadingSize).match(/#/g).length;
     const content = this.getLine().getString().replace(MARKDOWN_REGEX.heading, '').trim();
     return `<h${size}>${content}</h${size}>`;
   }
