@@ -57,6 +57,7 @@ const MARKDOWN_REGEX = {
   italic: /(.*)_(.*)_(.*)/,
   bold: /(.*)__(.*)__(.*)/,
   heading: /^[#]{1,6}\s/,
+  headingCount: /#/g,
   listItem: /^\*(.*)/,
 }
 
@@ -98,7 +99,11 @@ class MarkdownElement {
 
 class Heading extends MarkdownElement {
   toHtml() {
-    const size = this.getLine().getString().substr(0, MarkdownParserConfig.MaxHeadingSize).match(/#/g).length;
+    const size = this.getLine()
+        .getString()
+        .substr(0, MarkdownParserConfig.MaxHeadingSize)
+        .match(MARKDOWN_REGEX.headingCount)
+        .length;
     const content = this.getLine().getString().replace(MARKDOWN_REGEX.heading, '').trim();
     return `<h${size}>${content}</h${size}>`;
   }
@@ -116,7 +121,7 @@ class Paragraph extends MarkdownElement {
 
     if (line.isItalic()) {
       const italic = new Italic(line);
-       line = new MarkdownLine(italic.toHtml());
+      line = new MarkdownLine(italic.toHtml());
     }
 
     return paragraph.replace('%s', line.getString());
@@ -159,13 +164,13 @@ class ListItem extends MarkdownElement {
     if (line.isBold()) {
       line = new MarkdownLine(
           (new Bold(line)).toHtml()
-    );
+      );
     }
 
     if (line.isItalic()) {
       line = new MarkdownLine(
           (new Italic(line)).toHtml()
-    );
+      );
     }
 
     return listItem.replace("%s", line.getString());
@@ -175,14 +180,14 @@ class ListItem extends MarkdownElement {
 class Italic extends MarkdownElement {
   toHtml() {
     const matches = MARKDOWN_REGEX.italic.exec(this.getLine().getString());
-    return matches[1] + `<em>${ matches[2] }</em>` + matches[3];
+    return matches[1] + `<em>${matches[2]}</em>` + matches[3];
   }
 }
 
 class Bold extends MarkdownElement {
   toHtml() {
     const matches = MARKDOWN_REGEX.bold.exec(this.getLine().getString());
-    return matches[1] + `<strong>${ matches[2] }</strong>` + matches[3];
+    return matches[1] + `<strong>${matches[2]}</strong>` + matches[3];
   }
 }
 
