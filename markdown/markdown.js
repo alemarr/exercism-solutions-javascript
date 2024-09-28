@@ -53,7 +53,6 @@ const MARKDOWN_REGEX = {
   italic: /(.*)_(.*)_(.*)/,
   bold: /(.*)__(.*)__(.*)/,
   heading: /^[#]{1,6}\s/,
-  headingCount: /#/g,
   listItem: /^\*(.*)/,
 }
 
