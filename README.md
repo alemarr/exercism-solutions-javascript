@@ -35,6 +35,7 @@
 ## Medium 🐥
 
 - [Bob](./bob)
+- [Complex Numbers](./complex-numbers)
 - [Grade School](./grade-school)
 - [List Ops](./list-ops)
 - [Markdown](./markdown)
