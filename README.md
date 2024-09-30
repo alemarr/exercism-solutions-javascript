@@ -34,5 +34,11 @@
 
 ## Medium 🐥
 
+- [Bob](./bob)
+- [Grade School](./grade-school)
+- [List Ops](./list-ops)
 - [Markdown](./markdown)
-- [Secret handshake](./secret-handshake)
+- [Robot Name](./robot-name)
+- [Secret Handshake](./secret-handshake)
+- [Simple Cipher](./simple-cipher)
+- [Wordy](./wordy)
