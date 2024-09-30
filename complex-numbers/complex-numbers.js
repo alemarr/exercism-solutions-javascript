@@ -1,8 +1,3 @@
-//
-// This is only a SKELETON file for the 'Complex Numbers' exercise. It's been provided as a
-// convenience to get you started writing code faster.
-//
-
 export class ComplexNumber {
   constructor(real, imaginary) {
     this._real = real;
