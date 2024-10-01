@@ -14,6 +14,7 @@
 - [Hello World](./hello-world)
 - [High Scores](./high-scores)
 - [Leap](./leap)
+- [Matching Brackets](./matching-brackets)
 - [Matrix](./matrix)
 - [Pangram](./pangram)
 - [Perfect Numbers](./perfect-numbers)
