@@ -35,12 +35,16 @@
 
 ## Medium 🐥
 
+- [Beer Song](./beer-song)
 - [Bob](./bob)
 - [Complex Numbers](./complex-numbers)
 - [Grade School](./grade-school)
 - [List Ops](./list-ops)
 - [Markdown](./markdown)
 - [Robot Name](./robot-name)
+- [Robot Simulator](./robot-simulator)
 - [Secret Handshake](./secret-handshake)
 - [Simple Cipher](./simple-cipher)
+- [Sublist](./sublist)
+- [Sum of Multiples](./sum-of-multiples)
 - [Wordy](./wordy)
