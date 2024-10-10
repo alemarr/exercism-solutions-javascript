@@ -39,6 +39,7 @@
 - [Bob](./bob)
 - [Complex Numbers](./complex-numbers)
 - [Grade School](./grade-school)
+- [ISBN Verifier](./isbn-verifier)
 - [List Ops](./list-ops)
 - [Markdown](./markdown)
 - [Robot Name](./robot-name)
@@ -48,3 +49,7 @@
 - [Sublist](./sublist)
 - [Sum of Multiples](./sum-of-multiples)
 - [Wordy](./wordy)
+
+## Hard 🐔
+
+- [Change](./change)
